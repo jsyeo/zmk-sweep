@@ -68,10 +68,10 @@ jobs:
           name: firmware-zmk-sweep-right
           path: cradio_right_nice_nano_v2.uf2
 
-include:
-  - board: nice_nano_v2
-    shield: cradio_left
-  - board: nice_nano_v2
-    shield: cradio_right
-  - board: nice_nano_v2
-    shield: settings_reset
+    include:
+      - board: nice_nano_v2
+        shield: cradio_left
+      - board: nice_nano_v2
+        shield: cradio_right
+      - board: nice_nano_v2
+        shield: settings_reset
